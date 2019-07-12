@@ -1,0 +1,17 @@
+.message {
+  margin-bottom: 1rem;
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  &__body {
+    color: #555;
+  }
+}

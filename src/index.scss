@@ -1,0 +1,24 @@
+body {
+  background: #000;
+  color: #fff;
+  h1,
+  h2 {
+    font-family: "Pacifico", cursive;
+  }
+  h1 {
+    color: rgb(235, 80, 80);
+    font-size: 3rem;
+  }
+  h2 {
+    color: rgb(185, 185, 185);
+  }
+}
+.list {
+  div {
+    background-size: cover;
+    height: 300px;
+    color: #fff;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    margin-bottom: 20px;
+  }
+}
