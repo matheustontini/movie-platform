@@ -15,9 +15,19 @@ const Description = props => {
             <li>Vote average: {props.data.vote_average}</li>
             <li>Duration: {props.data.runtime} minutes</li>
           </ul>
-          <button className="btn btn-primary">Play</button>
-          <button className="btn btn-secondary" onClick={props.showList}>
-            Back
+          <button
+            className="button play mx-2"
+            onClick={() => {
+              props.showPlayer(
+                imgUrl,
+                props.data.title ? props.data.title : props.data.name
+              );
+            }}
+          >
+            Play
+          </button>
+          <button className="button back mx-2" onClick={props.showList}>
+            List
           </button>
         </div>
         <div className="col-md-6 col-12 text-center">

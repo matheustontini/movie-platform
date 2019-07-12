@@ -1,8 +1,11 @@
 import React from "react";
 
 const Item = props => {
+  //Check if the image is available, if is not, show a standart image
   const itemStyle = {
-    backgroundImage: `url(http://image.tmdb.org/t/p/w342${props.image})`
+    backgroundImage: props.image
+      ? `url(http://image.tmdb.org/t/p/w342${props.image})`
+      : "url('./img/img.png')"
   };
   return (
     <div

@@ -1,24 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Russo+One&display=swap");
+
 body {
   background: #000;
   color: #fff;
-  h1,
-  h2 {
-    font-family: "Pacifico", cursive;
-  }
   h1 {
-    color: rgb(235, 80, 80);
+    font-family: "Russo One", sans-serif;
     font-size: 3rem;
+    a {
+      color: rgb(116, 0, 0);
+    }
+    a:hover {
+      color: rgb(189, 0, 0);
+      text-decoration: none;
+    }
   }
   h2 {
-    color: rgb(185, 185, 185);
+    font-size: 1.2rem;
+    color: rgb(233, 233, 233);
   }
 }
 .list {
   div {
     background-size: cover;
-    height: 300px;
+    min-height: 350px;
+    height: auto;
     color: #fff;
     text-shadow: black 0.1em 0.1em 0.2em;
     margin-bottom: 20px;
   }
+}
+.videoPlay {
+  width: 100%;
+  height: 95vh;
+  .playTitle {
+    position: absolute;
+    display: none;
+    height: 100px;
+    width: 98%;
+    background-color: rgba(255, 255, 255, 0.103);
+    padding: 20px;
+  }
+}
+
+.videoPlay:hover {
+  .playTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+  }
+}
+
+.button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 20px;
+  color: #fff;
+  background-color: rgb(54, 54, 54);
+  border: 0px;
+}
+.button:hover {
+  background-color: rgb(145, 145, 145);
+}
+
+.play {
+  background-color: rgb(255, 52, 52);
+}
+.play:hover {
+  background-color: rgb(92, 0, 0);
 }
