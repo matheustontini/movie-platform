@@ -7,12 +7,11 @@ const Search = props => {
       <div className="row">
         <h2>Results for "{props.text}":</h2>
       </div>
-      <div className="row list">
-        {props.data.map(({ id, media_type, name, title, poster_path }) => {
+      <div className="row d-flex justify-content-around">
+        {props.data.map(({ id, media_type, title, name, poster_path }) => {
           return (
             <Item
               key={id}
-              //Check if title (for movies) exists, if don't exist, use the name (for TV series)
               name={title ? title : name}
               image={poster_path}
               showDescription={props.showDescription}

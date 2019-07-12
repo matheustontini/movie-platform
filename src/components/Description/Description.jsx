@@ -1,7 +1,9 @@
 import React from "react";
 
 const Description = props => {
-  const imgUrl = `http://image.tmdb.org/t/p/w342${props.data.poster_path}`;
+  const imgUrl = props.data.poster_path
+    ? `http://image.tmdb.org/t/p/w342${props.data.poster_path}`
+    : "./img/img.png";
   return (
     <>
       <div className="row">
@@ -11,9 +13,16 @@ const Description = props => {
         <div className="col-md-6 col-12 mb-2">
           <p>{props.data.overview}</p>
           <ul>
-            <li>Release date: {props.data.release_date}</li>
-            <li>Vote average: {props.data.vote_average}</li>
-            <li>Duration: {props.data.runtime} minutes</li>
+            {/* check if the parameters exists and show only if it is true */}
+            {props.data.release_date && (
+              <li>Release date: {props.data.release_date}</li>
+            )}
+            {props.data.vote_average && (
+              <li>Vote average: {props.data.vote_average}</li>
+            )}
+            {props.data.runtime && (
+              <li>Duration: {props.data.runtime} minutes</li>
+            )}
           </ul>
           <button
             className="button play mx-2"
@@ -26,8 +35,8 @@ const Description = props => {
           >
             Play
           </button>
-          <button className="button back mx-2" onClick={props.showList}>
-            List
+          <button className="button back mx-2" onClick={props.handleBack}>
+            Back
           </button>
         </div>
         <div className="col-md-6 col-12 text-center">

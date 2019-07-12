@@ -5,6 +5,7 @@ import Description from "./components/Description/Description.jsx";
 import Player from "./components/Player/Player.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Search from "./components/Search/Search.jsx";
+import "bootstrap/dist/css/bootstrap.css";
 import "./index.scss";
 import "./index.html";
 
@@ -18,6 +19,7 @@ class App extends React.Component {
     textSearch: "",
     key: "4b913b0b00e4cfdbd1de24b4bb793642",
     page: "list",
+    lastPage: "",
     movieDetails: [],
     image_player: "",
     title_player: "",
@@ -126,6 +128,13 @@ class App extends React.Component {
     }
   };
 
+  handleBack = () => {
+    //check if the last page was the player, if it was the player, the back button go to the list
+    this.setState({
+      page: this.state.lastPage === "player" ? "list" : this.state.lastPage
+    });
+  };
+
   render() {
     if (this.state.page === "list") {
       return (
@@ -163,7 +172,7 @@ class App extends React.Component {
           <Navbar showSearch={this.showSearch} showList={this.showList} />
           <Description
             data={this.state.movieDetails}
-            showList={this.showList}
+            handleBack={this.handleBack}
             showPlayer={this.showPlayer}
           />
         </>

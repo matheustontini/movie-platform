@@ -15,19 +15,24 @@ body {
     }
   }
   h2 {
-    font-size: 1.2rem;
+    font-family: "Russo One", sans-serif;
+    font-size: 1.5rem;
     color: rgb(233, 233, 233);
-  }
-}
-.list {
-  div {
-    background-size: cover;
-    min-height: 350px;
-    height: auto;
-    color: #fff;
-    text-shadow: black 0.1em 0.1em 0.2em;
     margin-bottom: 20px;
   }
+}
+.item {
+  background-size: cover;
+  color: #fff;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  margin-bottom: 20px;
+  height: 350px;
+  width: 250px;
+  border-radius: 10px;
+  padding: 20px;
+}
+.item:hover {
+  box-shadow: 0em 0em 0.5em #fff;
 }
 .videoPlay {
   width: 100%;

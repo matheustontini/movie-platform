@@ -9,7 +9,7 @@ const Item = props => {
   };
   return (
     <div
-      className="col-12 col-md-4 col-lg-2"
+      className="item"
       style={itemStyle}
       onClick={() => {
         props.showDescription(props.id, props.type);

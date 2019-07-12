@@ -27,8 +27,13 @@
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "owl.carousel": "^2.3.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "shaka-player": "^2.5.3"
+    "react-owl-carousel": "^2.3.1",
+    "react-slick": "^0.24.0",
+    "shaka-player": "^2.5.3",
+    "slick-carousel": "^1.8.1"
   }
 }
