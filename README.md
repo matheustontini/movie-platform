@@ -9,7 +9,9 @@ This platform shows a list with the top movies and TV series using The Movie Dat
 Via npm
 
 > npm install
+
 > npm install bootstrap
+
 > npm install slick-carousel
 
 ## Example 
