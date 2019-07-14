@@ -10,10 +10,6 @@ Via npm
 
 > npm install
 
-> npm install bootstrap
-
-> npm install slick-carousel
-
 ## Example 
 
 http://matheustontini.dx.am/movie-platform/
