@@ -10,7 +10,7 @@ Via npm
 
 > npm install
 
-## Example 
+## Demo
 
 http://matheustontini.dx.am/movie-platform/
 
