@@ -10,6 +10,8 @@ Via npm
 
 > npm install
 
+> npm run watch
+
 ## Demo
 
 http://matheustontini.dx.am/movie-platform/
