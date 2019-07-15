@@ -13,7 +13,7 @@ const Description = props => {
         <div className="col-md-6 col-12 mb-2">
           <p>{props.data.overview}</p>
           <ul>
-            {/* check if the parameters exists and show only if it is true */}
+            {/* Check if the parameters exists and show only if it is true */}
             {props.data.release_date && (
               <li>Release date: {props.data.release_date}</li>
             )}

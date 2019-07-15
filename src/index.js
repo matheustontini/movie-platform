@@ -28,6 +28,7 @@ class App extends React.Component {
   };
 
   componentDidMount() {
+    // Request the data from TMDB API (movies, series, family and documentary)
     fetch(
       `https://api.themoviedb.org/3/movie/popular?api_key=${
         this.state.key
@@ -75,6 +76,8 @@ class App extends React.Component {
   }
 
   showDescription = (id, type) => {
+    // Show the movie/serie description
+    // Check if is movie or TV to request the correct URL API
     fetch(
       `https://api.themoviedb.org/3/${type ? type : this.state.current_type}/${
         id ? id : this.state.current_id
@@ -93,12 +96,14 @@ class App extends React.Component {
   };
 
   showList = () => {
+    // Show the homepage list (standart)
     this.setState({
       page: "list"
     });
   };
 
   showPlayer = (img, title) => {
+    // Show the video player with the image and the title
     this.setState({
       page: "player",
       image_player: img,
@@ -107,6 +112,7 @@ class App extends React.Component {
   };
 
   showSearch = e => {
+    // Search when the user press ENTER
     const search = e.target.value;
     const keyCode = e.which || e.keyCode;
     const ENTER = 13;
@@ -129,7 +135,7 @@ class App extends React.Component {
   };
 
   handleBack = () => {
-    //check if the last page was the player, if it was the player, the back button go to the list
+    //Check if the last page was the player, if it was the player, the back button go to the list (homepage)
     this.setState({
       page: this.state.lastPage === "player" ? "list" : this.state.lastPage
     });
