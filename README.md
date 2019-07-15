@@ -15,4 +15,3 @@ Via npm
 ## Demo
 
 http://matheustontini.dx.am/movie-platform/
-
