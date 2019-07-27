@@ -1,6 +1,6 @@
 # Movie Platform
 
-## Describtion
+## Description
 
 This platform shows a list with the top movies and TV series using The Movie Database API.
 
@@ -14,4 +14,4 @@ Via npm
 
 ## Demo
 
-http://matheustontini.dx.am/portfolio/AppGiphy/
+http://matheustontini.dx.am/movie-platform
