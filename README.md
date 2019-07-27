@@ -14,4 +14,4 @@ Via npm
 
 ## Demo
 
-http://matheustontini.dx.am/movie-platform/
+http://matheustontini.dx.am/portfolio/AppGiphy/
